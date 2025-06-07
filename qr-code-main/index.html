@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QR code components</title>
+    <style>
+      body,
+      html {
+        background-color: hsl(212, 45%, 89%);
+      }
+      .bigger-container {
+        display: flex;
+        align-self: center;
+        background-color: #fff;
+        width: 50vh;
+        height: 100vh;
+        border-radius: 80px;
+        margin-left: 50%;
+        margin-right: 50%;
+      }
+      .container {
+        display: grid;
+        grid-template-columns: repeat(1fr 1fr 1fr);
+      }
+      .image {
+        border-radius: 20px;
+        padding: 50px;
+      }
+      .description{
+        order: 3;
+      }
+      .heading{
+        order: 2;
+      }
+      .image{
+        order: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bigger-container">
+      <div class="container">
+        <h1 style="font-weight: lighter; flex-direction: row;" class="heading">Lorem ipsum, dolor sit amet</h1>
+        <img
+          class="image"
+          src="./images/image-qr-code.png"
+          alt="QR Code Not Found"
+          width="70%"
+          height="70%"
+        />
+        <p style="font-weight: bold; " class="description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+          repellat aut iure dolore dolorum harum praesentium rerum totam
+          doloremque nobis, beatae culpa quia.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
